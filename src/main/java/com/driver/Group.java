@@ -3,24 +3,29 @@ package com.driver;
 public class Group {
     private String name;
     private int numberOfParticipants;
-    public Group(String name, int numberOfParticipants) {
+
+    //constructor
+    public Group(){
+
+    }
+    public Group(String name,int num){
         this.name = name;
-        this.numberOfParticipants = numberOfParticipants;
+        this.numberOfParticipants = num;
     }
 
-    public String getName() {
-        return name;
+    //Getters and Setters
+    public String getName(){
+        return this.name;
     }
 
-    public void setName(String name) {
+    public void setName(String name){
         this.name = name;
     }
 
-    public int getNumberOfParticipants() {
-        return numberOfParticipants;
+    public int getNumberOfParticipants(){
+        return this.numberOfParticipants;
     }
-
-    public void setNumberOfParticipants(int numberOfParticipants) {
-        this.numberOfParticipants = numberOfParticipants;
+    public void setNumberOfParticipants(int num){
+        this.numberOfParticipants = num;
     }
 }

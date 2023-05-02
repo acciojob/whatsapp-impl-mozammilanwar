@@ -2,36 +2,39 @@ package com.driver;
 
 import java.util.Date;
 
+import javax.xml.transform.Templates;
+
 public class Message {
     private int id;
     private String content;
     private Date timestamp;
-    public Message(int id, String content) {
+
+    //constructor
+    public Message(){
+
+    }
+    public Message(int id,String content){
         this.id = id;
         this.content = content;
     }
 
-    public int getId() {
-        return id;
+    //getters and setters
+    public int getId(){
+        return this.id;
     }
-
-    public void setId(int id) {
+    public void setId(int id){
         this.id = id;
     }
-
-    public String getContent() {
-        return content;
+    public String getContent(){
+        return this.content;
     }
-
-    public void setContent(String content) {
+    public void setContent(String content){
         this.content = content;
     }
-
-    public Date getTimestamp() {
-        return timestamp;
+    public Date getTimestamp(){
+        return this.timestamp;
     }
-
-    public void setTimestamp(Date timestamp) {
+    public void setTimestamp(Date timestamp){
         this.timestamp = timestamp;
     }
 }
